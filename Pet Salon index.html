@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ec8478f83d.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/lightbox.min.css">
+  <link rel="stylesheet" href="../css/utility.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>World of Pets</title>
+
+</head>
+<body id="home">
+  <header class="hero">
+    <div id="navbar" class="navbar top">
+      <div class="company-icon">
+        <div class="icon">
+          <a href=" ./index.html"><img src="./img 6.jpeg"alt="black logo></a>"
+        </div>
+        <div class="name">
+          <h1 class="logo">
+            <span>World of Pets</span>
+          </h1>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>Where Your Pet Get The King/Queen Treatment</h1>
+      <p>We provide top of the line accessories for your pet</p>
+      <a href="#about" class="btn"><i class="fas fa-chevron-right"></i>
+      Read More</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- About: icons -->
+    <section id="about" class="icons bg-light">
+      <div class="flex-items">
+        <div>
+          <a href="./index.html"><img src="./img 5.jpeg"alt="black logo"></a>
+          <div>
+            <h3>Product Quality</h3>
+            <p>We use the best products and instruments on your pet. World of Pets also sell the products that your pets will love.</p>
+          </div>
+        </div>
+        <div>
+          <a href="./index.html"><img src="./img 3.jpeg"alt="black logo"></a>
+          <div>
+            <h3>Grooming</h3>
+            <p>Nothing but the best hair cuts, trims and pampered treatment for your bundles of joy.</p>
+          </div>
+        </div>
+        <div>
+          <a href="./index.html"><img src="./img 8.jpeg"alt="black logo"></a>
+            
+        </div>
+      </div>
+    </section>
+  
+            <h4>What you are looking for</h4>
+            <h2>We provide spa treatment for your pets</h2>
+            
+            <a href="#" class="btn btn-outline">
+              <i class="fas fa-chevron-right"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </dev>
+    </section>
+    <!-- Cases -->
+    <section id="cases" class="cases flex-grid section-padding">
+      <header class="section-header">
+       
+      </header>
+      <div class="row">
+        <div class="column">
+          <a href="../image_resources/cases/cases1.jpg" data-lightbox="cases"
+          data-title="Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Nam, molestias!">
+            <img src="../image_resources/cases/cases1.jpg" alt="">
+          </a>
+          
+         <h4>1 Nov 2024</h4>
+            <h2>Our Blog</h2>
+            <a href="./index.html"><img src="./img 10.jpeg"alt="black logo"></a>
+            <a href="blog.html" class="btn btn-outline">
+              <i class="fas fa-chevron-right"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </dev>
+    </section>
+
+         </div>
+
+        </div>
+
+      </div>
+    </section>
+
+            <h2>Request Call Back</h2>
+            <form action="" class="callback-form">
+              <div class="form-control">
+                <label for="name"></label>
+                <input type="text" name="name" id="name"
+                placeholder="Enter name">
+              </div>
+              <div class="form-control">
+                <label for="email"></label>
+                <input type="email" name="email" id="email"
+                placeholder="example@gmail.com">
+              </div>
+              <div class="form-control">
+                <label for="phone"></label>
+                <input type="text" name="phone" id="phone"
+                placeholder="Enter phone">
+              </div>
+              <input type="submit" value="send" id="submit" class="btn">
+            </form>
+          </div>
+        </div>
+      </dev>
+    </section>
+    
+  </main>
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2024-World of Pets</p>
+  </footer>
+<!-- Adding javascript -->
+<script
+src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"></script>
+<script src="../js/lightbox.min.js"></script>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function(){
+      if(window.pageYOffset > 100){
+        navbar.classList.remove('top');
+
+        if(!scrolled){
+          navbar.style.transform = 'translateY(-90px)';
+        }
+        setTimeout(function(){
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        },200);
+      } 
+      else{
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+
+    // smooth scrolling
+    $('#navbar a, .btn').on('click', function(e){
+      if (this.hash !=''){
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top - 120,
+          },
+          800
+        );
+      }
+    });
+  </script>
+  
+</body>
+</html>
